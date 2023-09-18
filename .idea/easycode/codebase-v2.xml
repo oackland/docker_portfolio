@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
-    <option name="projectFiles" value="$PROJECT_DIR$/.devcontainer/devcontainer.json;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/components/CreateArea.js;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/components/CreateArea.tsx;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/components/Header.js;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/components/Header.tsx;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/App.js;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/App.tsx;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/main.js;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/main.tsx;C:/Users/oackland/Idea/docker_portfolio/docker-react/src/vite-env.d.ts;C:/Users/oackland/Idea/docker_portfolio/docker-react/index.html;C:/Users/oackland/Idea/docker_portfolio/docker-react/package-lock.json;C:/Users/oackland/Idea/docker_portfolio/docker-react/package.json;C:/Users/oackland/Idea/docker_portfolio/docker-react/README.md;C:/Users/oackland/Idea/docker_portfolio/docker-react/tsconfig.json;C:/Users/oackland/Idea/docker_portfolio/docker-react/tsconfig.node.json;C:/Users/oackland/Idea/docker_portfolio/docker-react/vite.config.ts" />
-    <option name="forceFullIndex" value="false" />
-  </component>
-</project>
