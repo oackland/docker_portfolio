@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/docker_portfolio.iml" filepath="$PROJECT_DIR$/.idea/docker_portfolio.iml" />
       <module fileurl="file://$PROJECT_DIR$/flask/flask.iml" filepath="$PROJECT_DIR$/flask/flask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/react_project/untitled.iml" filepath="$PROJECT_DIR$/react_project/untitled.iml" />
     </modules>
   </component>
 </project>

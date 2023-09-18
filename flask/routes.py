@@ -1,16 +1,15 @@
-import flask
+from flask import jsonify
+from app import app, db, Note
 
-import app
+
+@app.route('/api/notes', methods=['GET'])
+def get_notes():
+	notes = Note.query.all()
+	notes_data = [{'id': note.id, 'title': note.title, 'content': note.content} for note in notes]
+	return jsonify(notes_data)
 
 
-@app.app.route('/api/notes', methods=['POST'])
-def create_note():
-	data = flask.request.json
-	title = data.get('title')
-	content = data.get('content')
+# Add more routes for CRUD operations as needed
 
-	note = app.Note(title=title, content=content)
-	app.db.session.add(note)
-	app.db.session.commit()
-
-	return flask.jsonify({'message': 'Note created successfully'})
+if __name__ == '__main__':
+	app.run()

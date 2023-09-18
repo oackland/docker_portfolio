@@ -1,11 +1,8 @@
 import { useState } from "react";
-import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
 
-function CreateArea() {
+function CreateArea(props) {
   const [note, setNote] = useState({
     title: "",
     content: "",
@@ -20,6 +17,13 @@ function CreateArea() {
   }
 
   function submitNote(event) {
+    props.onAdd(note);
+    setNote({
+      title: "",
+      content: "",
+    });
+    event.preventDefault();
+
     event.preventDefault();
 
     fetch("/api/notes", {
@@ -32,27 +36,15 @@ function CreateArea() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        // handle success or error
       })
       .catch((error) => {
         console.error(error);
-        // handle error
       });
-  }
-
-  function handleEdit() {
-    // handle edit here
-    console.log("Edit note");
-  }
-
-  function handleDelete() {
-    // handle delete here
-    console.log("Delete note");
   }
 
   return (
     <div>
-      <form onSubmit={submitNote}>
+      <form className={"create-note"} onSubmit={submitNote}>
         <input
           type="text"
           name="title"
@@ -69,27 +61,9 @@ function CreateArea() {
           onChange={handleChange}
           key="content"
         />
-        <Box sx={{ position: "fixed", bottom: 20, right: 20 }}>
-          <Fab size="medium" color="primary" aria-label="add" type="submit">
-            <AddIcon />
-          </Fab>
-          <Fab
-            size="medium"
-            color="secondary"
-            aria-label="edit"
-            onClick={handleEdit}
-          >
-            <EditIcon />
-          </Fab>
-          <Fab
-            size="medium"
-            color="error"
-            aria-label="delete"
-            onClick={handleDelete}
-          >
-            <DeleteIcon />
-          </Fab>
-        </Box>
+        <Fab color="primary" aria-label="add">
+          <AddIcon />
+        </Fab>
       </form>
     </div>
   );
