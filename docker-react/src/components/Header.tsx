@@ -1,9 +1,9 @@
-import HighlightIcon from "@mui/icons-material/Highlight";
+import AddTaskRoundedIcon from '@mui/icons-material/AddTaskRounded';
 const Header = () => {
     return (
         <header>
             <h1>
-                <HighlightIcon/> ToDoList
+                <AddTaskRoundedIcon/> ToDoList
             </h1>
         </header>
             );
