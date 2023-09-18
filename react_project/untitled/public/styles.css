@@ -12,9 +12,8 @@ html
 
 body
 {
-	background       : #eee;
-	background-image : url("https://www.transparenttextures.com/patterns/cubes.png");
-	padding          : 0 -16px;
+	background : cornflowerblue url("https://www.transparenttextures.com/patterns/cubes.png");
+	padding    : 0 -16px;
 	}
 
 #form
@@ -111,4 +110,9 @@ form.create-note button
 	box-shadow    : 0 1px 3px rgba(0, 0, 0, 0.3);
 	cursor        : pointer;
 	outline       : none;
+	}
+
+.line
+{
+	border-top : 1px solid black;
 	}

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import "@mui/material/styles";
+
 import {
   AppBar,
   Toolbar,
@@ -11,7 +13,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 const MyAppBar = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
