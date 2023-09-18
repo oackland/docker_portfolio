@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/docker_portfolio.iml" filepath="$PROJECT_DIR$/.idea/docker_portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flask/flask.iml" filepath="$PROJECT_DIR$/flask/flask.iml" />
     </modules>
   </component>
 </project>

@@ -1,13 +1,15 @@
-import Header from './components/Header';
-import TextNotes from "./components/TextNotes.tsx";
-
+import Header from "./components/Header";
+import CreateArea from "./components/CreateArea.tsx";
+import { useState } from "react";
 function App() {
-    return (
-        <div>
-            <Header/>
-            <TextNotes/>
-        </div>
-    );
+  const [notes, setNotes] = useState([]);
+  function addNote(newNote) {}
+  return (
+    <div className={"App"}>
+      <Header />
+      <CreateArea onAdd={addNote} />
+    </div>
+  );
 }
 
 export default App;
